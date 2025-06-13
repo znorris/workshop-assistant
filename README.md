@@ -231,7 +231,7 @@ set OLLAMA_HOST=http://your-ollama-host:11434
 export OLLAMA_HOST=http://$(ip route show | grep -i default | awk '{ print $3}'):11434
 ```
 
-**Note for WSL Users:** If running the MCP server in WSL while Ollama runs on Windows, see `WSL_TROUBLESHOOTING.md` for detailed setup instructions including firewall configuration and port forwarding.
+**Note for WSL Users:** If running the MCP server in WSL while Ollama runs on Windows, see `docs/WSL_TROUBLESHOOTING.md` for detailed setup instructions including firewall configuration and port forwarding.
 
 ## Usage
 
@@ -469,7 +469,10 @@ workshop-assistant/
 ├── requirements.txt       # Python dependencies
 ├── setup.py              # Installation and setup script
 ├── claude_config.json    # Claude Desktop configuration template
-├── DEVELOPMENT_PLAN.md   # Development progress tracking
+├── docs/                 # Documentation files
+│   ├── DEVELOPMENT_PLAN.md   # Development progress tracking
+│   └── ...              # Other documentation
+├── scripts/             # Setup and utility scripts
 └── README.md            # This file
 ```
 
@@ -590,17 +593,17 @@ logging.basicConfig(level=logging.DEBUG)
 This repository includes several specialized guides for advanced usage:
 
 ### Performance & Optimization
-- **[WORKSHOP_ASSISTANT_ANALYSIS.md](WORKSHOP_ASSISTANT_ANALYSIS.md)** - Comprehensive technical analysis with performance benchmarks, system prompt testing results, and detailed usage insights from systematic testing
-- **[OPTIMIZATION_GUIDE.md](OPTIMIZATION_GUIDE.md)** - Practical guide with performance-tested prompts, workflows, and quick reference for maximizing workshop-assistant effectiveness
+- **[WORKSHOP_ASSISTANT_ANALYSIS.md](docs/WORKSHOP_ASSISTANT_ANALYSIS.md)** - Comprehensive technical analysis with performance benchmarks, system prompt testing results, and detailed usage insights from systematic testing
+- **[OPTIMIZATION_GUIDE.md](docs/OPTIMIZATION_GUIDE.md)** - Practical guide with performance-tested prompts, workflows, and quick reference for maximizing workshop-assistant effectiveness
 
 ### Setup & Integration
-- **[hardware_optimization.md](hardware_optimization.md)** - Hardware acceleration setup for NVIDIA (CUDA), AMD (ROCm), Apple Silicon (Metal), and CPU optimization
-- **[vscode_integration.md](vscode_integration.md)** - VSCode integration methods including Continue extension setup and Claude Code CLI integration
-- **[WSL_TROUBLESHOOTING.md](WSL_TROUBLESHOOTING.md)** - Windows Subsystem for Linux networking configuration and troubleshooting
+- **[hardware_optimization.md](docs/hardware_optimization.md)** - Hardware acceleration setup for NVIDIA (CUDA), AMD (ROCm), Apple Silicon (Metal), and CPU optimization
+- **[vscode_integration.md](docs/vscode_integration.md)** - VSCode integration methods including Continue extension setup and Claude Code CLI integration
+- **[WSL_TROUBLESHOOTING.md](docs/WSL_TROUBLESHOOTING.md)** - Windows Subsystem for Linux networking configuration and troubleshooting
 
 ### Development
-- **[orchestrator_prompts.md](orchestrator_prompts.md)** - Example system prompts and workflow patterns for Claude Desktop integration
-- **[DEVELOPMENT_PLAN.md](DEVELOPMENT_PLAN.md)** - Project development history, completed tasks, and testing results
+- **[orchestrator_prompts.md](docs/orchestrator_prompts.md)** - Example system prompts and workflow patterns for Claude Desktop integration
+- **[DEVELOPMENT_PLAN.md](docs/DEVELOPMENT_PLAN.md)** - Project development history, completed tasks, and testing results
 
 ## Contributing
 

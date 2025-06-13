@@ -2,7 +2,7 @@
   "mcpServers": {
     "workshop-assistant": {
       "command": "python",
-      "args": ["/home/znorris/src/github.com/znorris/workshop-assistant/server.py"],
+      "args": ["./server.py"],
       "env": {}
     },
     "workshop-assistant-tcp": {
