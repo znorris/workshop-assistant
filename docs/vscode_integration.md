@@ -2,7 +2,7 @@
 
 ## Overview
 
-Integrate the Ollama Workshop Assistant MCP Server with VSCode for seamless local LLM assistance during development.
+Integrate the Workshop Assistant MCP Server with VSCode for seamless local LLM assistance during development.
 
 ## Integration Methods
 
@@ -25,7 +25,7 @@ Add to your Continue config file (`~/.continue/config.json`):
     {
       "title": "Local Ollama Models",
       "provider": "mcp",
-      "model": "ollama-workshop-assistant",
+      "model": "workshop-assistant",
       "serverConfig": {
         "command": "python",
         "args": ["/absolute/path/to/workshop-assistant/server.py"],
@@ -49,7 +49,7 @@ Then configure Continue:
     {
       "title": "Local Ollama Models",
       "provider": "mcp",
-      "model": "ollama-workshop-assistant",
+      "model": "workshop-assistant",
       "serverConfig": {
         "transport": "tcp",
         "host": "localhost",

@@ -1,5 +1,5 @@
 @echo off
-echo === Ollama Workshop Assistant MCP Server Setup ===
+echo === Workshop Assistant MCP Server Setup ===
 echo.
 
 REM Check if Python is installed

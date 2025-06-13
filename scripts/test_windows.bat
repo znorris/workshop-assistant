@@ -1,5 +1,5 @@
 @echo off
-echo === Testing Ollama Workshop Assistant MCP Server ===
+echo === Testing Workshop Assistant MCP Server ===
 echo.
 echo This test will check:
 echo   1. Connection to Ollama service

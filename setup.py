@@ -25,7 +25,7 @@ def install_dependencies():
     return run_command("pip install -r requirements.txt", "Installing Python dependencies")
 
 def main():
-    print("Setting up Ollama Workshop Assistant MCP Server...")
+    print("Setting up Workshop Assistant MCP Server...")
     
     # Install dependencies
     if not install_dependencies():

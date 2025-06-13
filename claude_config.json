@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "ollama-workshop-assistant": {
+    "workshop-assistant": {
       "command": "python",
       "args": ["/home/znorris/src/github.com/znorris/workshop-assistant/server.py"],
       "env": {}

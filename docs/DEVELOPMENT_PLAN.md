@@ -1,4 +1,4 @@
-# Ollama Workshop Assistant MCP Server Development Plan
+# Workshop Assistant MCP Server Development Plan
 
 ## High Priority Tasks
 - [x] Research MCP protocol fundamentals and implementation requirements

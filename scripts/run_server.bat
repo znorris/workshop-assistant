@@ -1,5 +1,5 @@
 @echo off
-echo === Starting Ollama Workshop Assistant MCP Server ===
+echo === Starting Workshop Assistant MCP Server ===
 echo.
 
 REM Activate virtual environment

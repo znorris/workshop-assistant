@@ -16,7 +16,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-mcp = FastMCP("Ollama Workshop Assistant")
+mcp = FastMCP("Workshop Assistant")
 
 
 def get_ollama_base_url() -> str:
@@ -215,12 +215,12 @@ def chat_with_model(model_name: str, prompt: str, system_prompt: str = "", verbo
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Ollama Workshop Assistant MCP Server")
+    parser = argparse.ArgumentParser(description="Workshop Assistant MCP Server")
     parser.add_argument("--port", type=int, help="Run server on TCP port instead of stdio")
     parser.add_argument("--host", type=str, default="localhost", help="Host to bind to (default: localhost)")
     args = parser.parse_args()
     
-    logger.info(f"Starting Ollama Workshop Assistant MCP Server")
+    logger.info(f"Starting Workshop Assistant MCP Server")
     logger.info(f"Ollama URL: {OLLAMA_BASE_URL}")
     
     # Print server details

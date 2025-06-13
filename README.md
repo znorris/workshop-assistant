@@ -1,4 +1,4 @@
-# Ollama Workshop Assistant MCP Server
+# Workshop Assistant MCP Server
 
 A Model Context Protocol (MCP) server that integrates with Ollama to provide local LLM capabilities to Claude and other MCP-compatible clients.
 
@@ -274,7 +274,7 @@ The MCP server will connect to Ollama and expose tools to Claude.
 ```json
 {
   "mcpServers": {
-    "ollama-workshop-assistant": {
+    "workshop-assistant": {
       "command": "python",
       "args": ["/absolute/path/to/workshop-assistant/server.py"],
       "env": {}
@@ -356,7 +356,7 @@ claude mcp add ollama-workshop /path/to/server.py --scope project
 {
   "continue.mcp": {
     "servers": {
-      "ollama-workshop-assistant": {
+      "workshop-assistant": {
         "command": "python",
         "args": ["/absolute/path/to/workshop-assistant/server.py"]
       }

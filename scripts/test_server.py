@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Test script for the Ollama Workshop Assistant MCP Server."""
+"""Test script for the Workshop Assistant MCP Server."""
 
 import json
 import sys
@@ -77,7 +77,7 @@ def test_chat():
 
 def main():
     """Run all tests."""
-    print("=== Ollama Workshop Assistant MCP Server Test ===\n")
+    print("=== Workshop Assistant MCP Server Test ===\n")
     
     tests = [
         ("Connection", test_connection),
